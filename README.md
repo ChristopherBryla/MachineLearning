@@ -23,6 +23,12 @@
 
 * [Conclusion: Results and Submission](https://github.com/ChristopherBryla/MachineLearningProject#conclusion-results-and-submission)
 
+* [Limitations and Future Directions](https://github.com/ChristopherBryla/MachineLearningProject#limitations-and-future-directions)
+
+* [Challenges](https://github.com/ChristopherBryla/MachineLearningProject#challenges)
+
+* [References](https://github.com/ChristopherBryla/MachineLearningProject#references)
+
 ## About the Challenge 
 Twitter has quickly grown to become one of the most popular social media channels in
 the world. With a wide range of users ranging from spoof accounts of peoples’ pets to prominent
@@ -35,8 +41,8 @@ in this area is apparent (Business Wire, 2019).
 
 Specific to this challenge, disaster relief organizations and news agencies are interested in
 understanding whether tweets with seemingly similar language are referring to a disaster or some
-other life event that my linguistic appear in a similar manner to a disaster. Take, for example,
-the tweet in Figure 1 (below) which uses the word ‘ablaze’ to describe the sky. The combination
+other life event that may linguistically appear in a similar manner to a disaster. Take, for example,
+a tweet which uses the word ‘ablaze’ to describe the sky. The combination
 of the visual and the contextual clues given in the sentence such as ‘sky’ help a human
 extrapolate meaning and make the judgement that this tweet is not truly about a disaster.
 However, making that distinction apparent to a trained model will provide much more difficulty.
@@ -50,7 +56,7 @@ was sent from), text (the text of the tweet), and the dependent variable target 
 the tweet is about a real disaster or not). ID is a nominal variable without any missing values,
 there are 221 unique key words (1% missing values), 33% of the location data is missing, and
 there is slight imbalance in the target variable with 43% of the trainset data classified as an actual
-disaster. See Table 1 (below) for a descriptive summary.
+disaster.
 
 ## Data Preparation
 Based upon the exploratory analysis, we decided to not use the location in our analysis
@@ -161,6 +167,32 @@ than the average score from cross-validation, indicating slight overfitting. How
 to be expected with text data like this, because the training data and test data are very unlikely to 
 have the same distribution of words used. The best model was logistic regression with minimal
 preprocessing, with a score of 0.8098.
+
+## Limitations and Future Directions
+One major limitation of recognizing disasters from text is that there is a much higher rate of false positives than false negatives. This makes sense, because people can use words that sound like a disaster without there actually being any disaster (e.g. “The party was a blast”). Being able to interpret these nuances of natural language correctly would require more sophisticated models than ones using a bag of words approach. In particular, using more advanced NLP techniques like syntax tree parsing and word sense disambiguation could help to more correctly identify when particular words are being used in a disaster related context, making their meanings easier for a model to interpret. Higher scoring results on Kaggle use advanced models like BERT, which have been getting state-of-the-art results in NLP tasks. These models, however, are extremely computationally expensive to train.
+
+For future analysis, it might be worthwhile taking a deeper examination of how the one-word description and location could be better utilized in the model. Greater work could be done weighting words, exploring ideas such as tweet volume per minute using similar disaster
+language. It might also help to build anomaly detection for the volume of tweets using disaster language in a specific geographic location that might clear the noise caused by infrequent but muddling instances like the ‘ablaze sky’ example articulated earlier. Additional accuracy may result from incorporating additional data sources that were not explored in this Kaggle submission.
+
+One additional step we could have taken would have been to go through the dataset and preprocess the data by hand by either: fixing any obvious spelling errors or normalizing the locational data in order to make use of it. The problem with doing this is it would be very time consuming going through all of the tweets and it very simply could have a negative or zero-sum effect on the models. There is a chance that people tend to make spelling errors when a real disaster is occurring, which would be lost in our extensive preprocessing. This project really showed us the strengths and limitations of the models and techniques that we had to use.
+
+## Challenges
+One of the challenges we experienced was around the training time required to build a model. Another main challenge was that a lot of important information seemed to be contained in the words which were usually removed, like stopwords. We found that the models which did not do extensive preprocessing performed better in almost all cases. Also, another challenge that we faced was not all of us were using the same programming language. Two of us used R to code while the other person used Python. This left our code fragmented and a lot of redundancies occurred.
+
+## References
+Koo, Ching & Liew, Mei & Mohamad, Mohd & Salleh, Abdul. (2013). A Review for Detecting Gene-Gene Interactions Using Machine Learning Methods in Genetic Epidemiology. BioMed research international. 2013. 432375. 10.1155/2013/432375.
+
+Pang-Ning Tan, Michael Steinbach, and Vipin Kumar (2005) Introduction to Data Mining. Addison Wesley, 2005.
+
+Schmunk, Sergej & Höpken, Wolfram & Fuchs, Matthias & Lexhagen, Maria. (2014). Sentiment Analysis: Extracting Decision-Relevant Knowledge from UGC. Information and Communication Technologies in Tourism 2014. 10.1007/978-3-319-03973-2_19.
+
+
+
+
+
+
+
+
 
 
 
