@@ -185,21 +185,3 @@ Koo, Ching & Liew, Mei & Mohamad, Mohd & Salleh, Abdul. (2013). A Review for Det
 Pang-Ning Tan, Michael Steinbach, and Vipin Kumar (2005) Introduction to Data Mining. Addison Wesley, 2005.
 
 Schmunk, Sergej & Höpken, Wolfram & Fuchs, Matthias & Lexhagen, Maria. (2014). Sentiment Analysis: Extracting Decision-Relevant Knowledge from UGC. Information and Communication Technologies in Tourism 2014. 10.1007/978-3-319-03973-2_19.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
