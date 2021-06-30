@@ -1,33 +1,33 @@
 # Real or Not? NLP with Disaster Tweets
 
 ## Contents
-* [About the Challenge](https://github.com/ChristopherBryla/MachineLearningProject#about-the-challenge)
+* [About the Challenge](https://github.com/ChristopherBryla/MachineLearningProject/blob/main/README.md#about-the-challenge)
 
-* [Exploratory Data Analysis](https://github.com/ChristopherBryla/MachineLearningProject#exploratory-data-analysis)
+* [Exploratory Data Analysis](https://github.com/ChristopherBryla/MachineLearningProject/blob/main/README.md#exploratory-data-analysis)
 
-* [Data Preparation](https://github.com/ChristopherBryla/MachineLearningProject#data-preparation)
+* [Data Preparation](https://github.com/ChristopherBryla/MachineLearningProject/blob/main/README.md#data-preparation)
 
-* [Sentiment Analysis](https://github.com/ChristopherBryla/MachineLearningProject#sentiment-analysis)
+* [Sentiment Analysis](https://github.com/ChristopherBryla/MachineLearningProject/blob/main/README.md#sentiment-analysis)
 
-* [Modeling](https://github.com/ChristopherBryla/MachineLearningProject#modeling)
+* [Modeling](https://github.com/ChristopherBryla/MachineLearningProject/blob/main/README.md#modeling)
 
-  * [SVM](https://github.com/ChristopherBryla/MachineLearningProject#svm)
+  * [SVM](https://github.com/ChristopherBryla/MachineLearningProject/blob/main/README.md#svm)
 
-  * [Naïve Bayes](https://github.com/ChristopherBryla/MachineLearningProject#na%C3%AFve-bayes)
+  * [Naïve Bayes](https://github.com/ChristopherBryla/MachineLearningProject/blob/main/README.md#na%C3%AFve-bayes)
 
-  * [Random Forest](https://github.com/ChristopherBryla/MachineLearningProject#random-forest)
+  * [Random Forest](https://github.com/ChristopherBryla/MachineLearningProject/blob/main/README.md#random-forest)
 
-  * [Logistic Regression](https://github.com/ChristopherBryla/MachineLearningProject#logistic-regression)
+  * [Logistic Regression](https://github.com/ChristopherBryla/MachineLearningProject/blob/main/README.md#logistic-regression)
 
-  * [Neural Network](https://github.com/ChristopherBryla/MachineLearningProject#neural-network)
+  * [Neural Network](https://github.com/ChristopherBryla/MachineLearningProject/blob/main/README.md#neural-network)
 
-* [Conclusion: Results and Submission](https://github.com/ChristopherBryla/MachineLearningProject#conclusion-results-and-submission)
+* [Conclusion: Results and Submission](https://github.com/ChristopherBryla/MachineLearningProject/blob/main/README.md#conclusion-results-and-submission)
 
-* [Limitations and Future Directions](https://github.com/ChristopherBryla/MachineLearningProject#limitations-and-future-directions)
+* [Limitations and Future Directions](https://github.com/ChristopherBryla/MachineLearningProject/blob/main/README.md#limitations-and-future-directions)
 
-* [Challenges](https://github.com/ChristopherBryla/MachineLearningProject#challenges)
+* [Challenges](https://github.com/ChristopherBryla/MachineLearningProject/blob/main/README.md#challenges)
 
-* [References](https://github.com/ChristopherBryla/MachineLearningProject#references)
+* [References](https://github.com/ChristopherBryla/MachineLearningProject/blob/main/README.md#references)
 
 ## About the Challenge 
 Twitter has quickly grown to become one of the most popular social media channels in
